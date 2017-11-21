@@ -62,9 +62,44 @@ Class Selectors
 /*
 star-
 */
-.star {
+.star1 {
+    top: -100px;
     position: relative;
     margin-left: 2em;
+    animation-name: fly1;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.star2 {
+    top: -100px;
+    position: relative;
+    margin-left: 2em;
+    animation-name: fly2;
+    animation-duration: 1.75s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+.star3 {
+    top: -100px;
+    position: relative;
+    margin-left: 2em;
+    animation-name: fly3;
+    animation-duration: 1.55s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1.3s;
+}
+.star4 {
+    top: -100px;
+    position: relative;
+    margin-left: 2em;
+    animation-name: fly4;
+    animation-duration: 1.6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 .star-left {
     border-left: 7px solid transparent;
@@ -110,4 +145,34 @@ star-
     top: 27px;
     left: -11px;
     transform: rotate(100deg)
+}
+
+
+/****************
+Animations
+****************/
+
+@keyframes fly1 {
+    0%   {transform: translate(120px, -100px);}
+    50% {transform: translate(120px, 200px);}
+    75% {transform: translate(120px, 400px);}
+    100% {transform: translate(120px, 600px);}
+}
+@keyframes fly2 {
+    0%   {transform: translate(300px, -100px);}
+    50% {transform: translate(300px, 200px);}
+    75% {transform: translate(300px, 400px);}
+    100% {transform: translate(300px, 600px);}
+}
+@keyframes fly3 {
+    0%   {transform: translate(200px, -100px);}
+    50% {transform: translate(200px, 200px);}
+    75% {transform: translate(200px, 400px);}
+    100% {transform: translate(200px, 600px);}
+}
+@keyframes fly4 {
+    0%   {transform: translate(50px, -100px);}
+    50% {transform: translate(50px, 200px);}
+    75% {transform: translate(50px, 400px);}
+    100% {transform: translate(50px, 600px);}
 }
